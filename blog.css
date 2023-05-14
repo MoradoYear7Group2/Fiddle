@@ -1,0 +1,91 @@
+
+*{
+    font-family: 'Oswald', sans-serif;
+
+}
+h4{
+    font-weight: 300;
+}
+.img{
+    top: -60px; 
+    position: absolute;
+    left: calc(50% -60px);
+    border: 10px solid white;
+}
+
+img{
+    width: 100%;
+}
+.container{
+    border: 1px black solid;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.writer{
+    display: flex;
+}
+.text{
+    padding-bottom: 20px;
+}
+.writer > img{
+    align-self: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+.quote{
+    border-left: 3px solid black;
+}
+.quote > p{
+    padding-left: 10px;
+}
+
+.related{
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.related > .col{
+    width: 50%;
+   border: 1px black solid;
+   margin-right: 50px;
+}
+.related > .div2{
+    margin-right: 0px;
+}
+.related > .col > a > .text{
+    
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.related-h2{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.icon > a{
+    color:black;
+}
+.icon > a:hover{
+    color: #008566;
+}
+.related > .col > a:hover{
+    opacity: 0.6;
+    transition: .5s;
+    cursor:pointer;
+}
+.related > .col > a{
+    text-decoration: none;
+    color: black;
+}
+.container > .row > .text > a{
+    text-decoration: none;
+    color: black;
+}
+.home_link > a{
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+}

@@ -1,0 +1,567 @@
+
+button:hover{
+    background-color: #008566;
+    transition: 0.3s;
+}
+.space{
+    height: 30px;
+}
+/*navigation bar */  
+ 
+*{
+    font-family: 'Oswald', sans-serif;
+
+}
+h5, p, blockquote{
+    font-size: 16px;
+    font-weight: 100;
+}
+#h1, .h1, h1{
+    font-size: 40px;
+}
+.title{
+    font-size: 80px;
+    color:  #008566;
+}
+#h2{
+    font-size: 30px;
+}
+#h3, .h3, h3{
+    font-weight: 500;
+    font-size: 23px;
+}
+.img{
+    top: -60px; 
+    position: absolute;
+    left: calc(50% -60px);
+    border: 10px solid white;
+}
+
+img{
+    width: 100%;
+}
+.container{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.writer{
+    display: flex;
+}
+.text{
+    padding-bottom: 20px;
+}
+.writer > img{
+    align-self: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+.quote{
+    border-left: 3px solid black;
+}
+.quote > p{
+    padding-left: 10px;
+}
+
+.related{
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.related > .col{
+    width: 50%;
+   border: 1px black solid;
+   margin-right: 50px;
+}
+.related > .div2{
+    margin-right: 0px;
+}
+.related > .col > a > .text{
+    
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.related-h2{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.icon > a{
+    color:black;
+}
+.icon > a:hover{
+    color: #008566;
+}
+.related > .col > a:hover{
+    opacity: 0.6;
+    transition: .5s;
+    cursor:pointer;
+}
+.related > .col > a{
+    text-decoration: none;
+    color: black;
+}
+.container > .row > .text > a{
+    text-decoration: none;
+    color: black;
+}
+.home_link > a{
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+}
+
+nav{
+    font-size: 20px;
+    align-items: center;
+    z-index: 1;
+    padding-left:40%;
+    position: fixed;
+    align-items: center;
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 1px 8px #a9a7a7;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;height: 45px;
+}
+nav > ul{
+    width: 100%;
+}
+nav > ul > li > a{
+    
+    text-decoration: none;
+    color: black;
+}
+nav > ul > li{
+    margin-top: 10px;
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    margin-right: 6%;
+    color: rgb(79, 79, 79);
+} 
+nav > ul > li > a:hover{
+    color: #008566;
+}
+#navlink{
+    font-size: 20px;
+}
+nav > a > i{
+    visibility: hidden;
+    color: rgb(79, 79, 79);
+    float: left;
+}
+nav > input{
+    display: none;
+}
+#check:checked ~ ul{
+    visibility: visible;
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    display: none;
+    font-size: 25px;
+}
+.linebreak{
+    display: none;
+}
+
+@media (max-width: 645px) {
+    .linebreak{
+        display: block;
+        height: 20px;
+    }
+    nav{
+        padding-left: 0;
+        z-index: 1;
+    }
+    nav > a{
+        text-align: center;
+        justify-content: center;
+    }
+    nav > ul > li{
+        text-align:center;
+        display: block;
+        margin-bottom: 30px;
+    }
+    .nav_home{
+        margin-top: 7%;
+    }
+    nav > ul{
+        visibility: hidden;
+        position: fixed;
+        margin-left: 0;
+        width: 100%;
+        background-color: rgba(221,220,215,255);
+        margin-top: 365px;
+    }
+    nav > input {
+        position: absolute;
+        display: block;
+        right: 2%;
+        top: 20%;
+    }
+    .checkbtn{
+        display: block;
+        margin-left: 90%;
+        cursor: pointer;
+    }
+}
+
+/*home*/  
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo > img{
+    width: 50px;
+    position: absolute;
+    left: 10%;top: 0;
+}
+li{
+    list-style-type: none;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(healthy.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#home .banner .content{
+    width: 80%;
+    position: absolute;
+    top: 55%;left: 10%;
+    background: linear-gradient(rgba(255, 255, 255, 0.75),rgba(255, 255, 255, 0.75));
+    transform: translateY(-50%);
+    text-align: center;
+    color: black;
+    padding-bottom: 60px;
+}
+#home .banner .content h1{
+    margin-top: 60px;
+}
+#home .banner .content p{
+    margin: 20px auto;
+    line-height: 25px;
+}
+
+button{
+    width: 200px;
+    text-align: center;
+    background: transparent;
+    color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+}
+button span{
+    background-color: #008566;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+.home > .banner > .content > a > button:hover{
+    background-color: transparent;
+}
+/* css for about us page */
+.about > .mission{
+    align-items: center;
+}
+
+.about > .row > .div2{
+    width: 100%;
+}
+.about > .row > [class*="col"] >img{
+    width: 100%;
+}
+
+.about > .row{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+@media (max-width: 580px){
+    .about .row [class*="col"]{
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    .about .row [class*="col"] > .div2{
+        display: block;
+    }
+}
+#mission, #blog{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.ourmission::before{
+    content: "“";
+    font-size: 50px;
+    position: relative;
+    color: rgb(0, 0, 0);
+    line-height: 20px;
+    bottom: -15px;
+    right: 5px;
+}
+.ourmission::after{
+    content: "”";
+    font-size: 50px;
+    position: relative;
+    color: rgb(0, 0, 0);
+    line-height: 10px;
+    bottom: -15px;
+    left: 5px;
+}
+
+.mission > div > img{
+     width: 100%;
+}
+.mission {
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+@media (max-width:580px){
+.mission{
+    display: block;
+}
+}
+
+  .blog, .testimonial{
+    background-color: #fffdfa;
+  }
+
+
+        .blog > .row > .div1, .div2{
+            margin-right: 40px;
+            
+        }
+        .blog > .row > [class*="col"]{
+            display: inline;
+            margin: auto;
+            text-align: center;
+        }
+
+
+
+        .service_img{
+            width: 150px;height: 200px;
+            transition: 0.5s;
+        }
+
+        .title1{
+            color: rgba(0,167,62,255);
+            text-align: center;
+        }
+
+        .service_img > .row >  [class*="col"]>.div_img{
+            justify-content: center;
+            display: flex;
+            
+        }
+        .blog > .row >  [class*="col"]> .div_img > figure{
+            margin: auto;
+            width: 150px;
+            height: 200px;
+            overflow: hidden;
+        }
+        .service_img:hover{
+            
+         transform: scale(1.5)
+        }
+
+    .line{
+        height: 60px;
+        display: none;
+    }
+    
+
+
+    @media (max-width: 780px){
+        .blog > .row > [class*="col"]{
+            padding-bottom: 50px;
+        }
+        .line{
+            display: block;
+        }
+
+
+    }
+    @media (max-width: 992px){
+
+    }
+    
+
+/* service*/
+
+
+.service > .row{
+    align-items: center;
+    justify-content: center;
+}
+.service > .row{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.service > .row > .div1, .div2{
+    margin-right: 7%;
+}
+@media (max-width: 500px){
+    .service > .row{
+        display: block;
+    }
+    .service > .row > .div1, .div2{
+        margin-right: 0px;
+    }
+}
+/* css for testimonial section */  
+    fieldset, legend{
+        all:revert;
+    }
+    .testimonial > .container{
+        margin: 20px;
+        justify-content: center;
+        margin: auto;
+    }
+    .testimonial{
+        justify-content: center;
+    }
+    .testimonial > .container > fieldset > .content{
+        line-height: 13px;
+    }
+    .testimonial > .container > fieldset > .content > .name{
+        text-align: center;
+    }
+    .testimonial > .container > fieldset > .content > .stars{
+        color: rgb(255, 204, 0);
+        font-size: 25px;
+        text-align: center;
+    }
+    .testimonial > .container > fieldset > blockquote::before{
+    content: "“";
+    font-size: 50px;
+    position: relative;
+    color: rgb(0, 0, 0);
+    line-height: 20px;
+    bottom: -15px;
+    right: 5px;
+}
+.testimonial > .container > fieldset > blockquote::after{
+    content: "”";
+    font-size: 50px;
+    position: relative;
+    color: rgb(0, 0, 0);
+    line-height: 10px;
+    bottom: -15px;
+    left: 5px;
+}
+.testimonial > .container > .profile:hover{
+    box-shadow: 0 0 15px 5px rgba(0,0,0,0.2);
+}
+.testimonial > .container > fieldset{
+   margin-right: 20px;
+}
+.testimonial > .container > #fieldset3{
+    margin-right: 0px;
+}
+.testimonial > .container > fieldset > legend{
+        text-align: center;
+    }
+    .testimonial > .container{
+        display: flex;
+    }
+    .testimonial > .container > fieldset > legend > img{
+        border-radius: 20px;
+        height: 120px;
+        width: 120px;
+    }
+    @media (max-width: 900px){
+.testimonial > .container{
+    display: block;
+}
+    }
+    .testimonial > .container > fieldset{
+        margin-bottom: 30px;
+    }
+
+/* footer */footer > .row > .line{
+  height: 30px;
+  display: none;
+}
+footer > .row > .d2 > input{
+  width: 100%;
+}
+.submit{
+    width: 100%;
+    margin-top: 30px;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+
+footer > .row > .d1, .d2, .d3{
+
+  text-align: center;
+  margin-right: 50px;
+}
+
+footer > .row{
+  margin: auto;
+  width: 100%;
+  justify-content: center;
+}
+
+footer > .row > .d1 > a{
+    display:block;
+    color: rgb(255, 255, 255);
+}
+footer > .row > .d1 > a:hover{
+    color: black;
+}
+footer{
+  padding-top: 30px;
+  position: absolute;
+  left: 0;right: 0;
+  background-color: #008566;
+  color: white;
+}
+footer > i{
+    text-align: center;
+}
+footer > .row > .col > a > button{
+    width: 100%;height: 30px;
+    padding: 0px;
+    background-color: white;
+}
+footer > .row > .col > a > button:hover{
+    background-color: #008566;
+}
+.icon > a{
+    color:rgb(255, 255, 255);
+}
+.icon > a:hover{
+    color:rgb(0, 0, 0);
+}
+@media (max-width: 770px){
+footer > .row > .line{
+    display: block;
+}
+ footer > .row > .d2{
+  padding-left: 150px;
+  padding-right: 150px;
+}
+}
